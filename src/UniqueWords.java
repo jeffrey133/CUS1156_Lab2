@@ -14,7 +14,12 @@ public class UniqueWords
       for (int i = 0; i < list.size(); i++)
       {		 for (int j = 0; j < list.size(); j++)
 		 {
-			
+    	  if(list.get(i)==list.get(j)) {
+    		  count--;
+    	  }
+    	  else if(list.get(i)!=list.get(j)) {
+    		  count++;
+    	  }
 		 }
       }
 	  return count;
